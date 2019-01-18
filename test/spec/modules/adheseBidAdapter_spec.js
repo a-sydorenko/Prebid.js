@@ -33,7 +33,7 @@ describe('AdheseAdapter', function () {
       consentString: 'CONSENT_STRING'
     };
     it('should return empty when iframe disallowed', function () {
-      expect(spec.getUserSyncs({ iframeEnabled: false }, serverResponse, gdprConsent)).to.be.empty;
+      expect(spec.getUserSyncs({ iframeEnabled: false }, serverResponse, gdprConsent)).to.be.undefined;
     });
     it('should return usersync url when iframe allowed', function () {
       expect(spec.getUserSyncs({ iframeEnabled: true }, serverResponse, gdprConsent)).to.deep.equal([{ type: 'iframe', url: 'https://user-sync.adhese.com/iframe/user_sync.html?account=demo&gdpr=1&consentString=CONSENT_STRING' }]);

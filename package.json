@@ -28,7 +28,7 @@
     "@babel/preset-env": "^7.2.3",
     "ajv": "6.2.0",
     "babel-loader": "^8.0.5",
-    "chai": "^3.3.0",
+    "chai": "^4.2.0",
     "coveralls": "^3.0.1",
     "documentation": "^5.2.2",
     "ejs": "^2.5.1",
